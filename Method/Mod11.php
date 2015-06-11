@@ -151,7 +151,7 @@ namespace UKBankModulus\Method
             //Exception 5
             if($this->_exception == 5) {
                 $remainder = 11 - $modulus;
-                if(($modulus === 0 && $account[6] === "0") || ($remainder === (int)$account[6] && $remainder != 1)) {
+                if(($modulus === 0 && $account[6] === "0") || ($remainder === (int)$account[6] && $modulus != 1)) {
                     return true;
                 } else {
                     return false;
